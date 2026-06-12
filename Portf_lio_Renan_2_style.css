@@ -1,0 +1,32 @@
+ /* .profile-frame: Classe que estiliza a foto de perfil */
+ .profile-frame {
+   width: 180px;
+   /* Largura fixa da imagem */
+   height: 180px;
+   /* Altura fixa da imagem */
+   border-radius: 50%;
+   /* Corta os cantos da imagem em 50%, transformando-a em um círculo */
+
+   /* EFEITO DE MOLDURA ABERTA: 
+               Definimos uma borda de 5px sólida e azul (#0d6efd) em toda a imagem,
+                mas mudamos especificamente a cor da borda inferior para transparente. */
+   border: 5px solid #0d6efd;
+   border-bottom-color: transparent;
+
+   object-fit: cover;
+   /* Garante que a foto não fique distorcida ou esticada dentro do círculo */
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+   /* Adiciona uma sombra suave ao redor da moldura */
+ }
+
+ /* .card-custom: Classe para dar um efeito visual interativo aos cards */
+ .card-custom {
+   transition: transform 0.2s;
+   /* Define que qualquer animação nesta classe durará 0.2 segundos */
+ }
+
+ /* :hover indica o que acontece quando o usuário passa o mouse sobre o card */
+ .card-custom:hover {
+   transform: translateY(-5px);
+   /* Desloca o card 5 pixels para cima, criando um efeito de flutuação */
+ }
